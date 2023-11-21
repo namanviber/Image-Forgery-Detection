@@ -7,7 +7,7 @@ model = load_model("newMobileNet.h5")
 
 st.title('Image Forgery Detection')
 
-uploaded_file = st.file_uploader("Choose an image...", type="jpg")
+uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
 
 # Preprocess Image
 def preprocess_image(img):
